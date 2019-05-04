@@ -7,7 +7,28 @@ Convenience, to write more explicit tests
 
 This crate provides an unique macro to write more explicit tests.
 
+First, add dependency
 ```toml
-[dev.dependencies]
+[dev-dependencies]
 doubts="0.1.0"
+```
+Then declare the use of this crate:
+```rust
+#[macro_use]
+#[cfg(test)]
+extern crate doubts;
+```
+
+Finally, write tests:
+```rust
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test() {
+        let v = vec![1, 2];
+        assert_that!(v, has len == 2);
+        assert_that!(v, has capacity == 2);
+        assert_that!(v, contains &2);
+    }
+}
 ```
