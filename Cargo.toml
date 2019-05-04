@@ -3,5 +3,15 @@ name = "doubts"
 version = "0.1.0"
 authors = ["RustyTheClone <21066051+rustytheclone@users.noreply.github.com>"]
 edition = "2018"
+
+[package]
 description="Convenience, to write more explicit tests"
+repository = "https://github.com/rustyTheClone/doubts"
+readme = "README.md"
+keywords = ["test", "macro", "unit"]
+categories=["development-tools"]
 [dependencies]
+
+[badges]
+travis-ci = { repository = "rustyTheClone/doubts", branch = "master" }
+maintenance = { status = "passively-maintained"}
