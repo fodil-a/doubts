@@ -56,6 +56,7 @@
 /// impl Pair{
 ///     fn contains(&self, i:i32, j:i32) -> bool{
 ///         // ...
+///         false
 ///     }
 /// }
 /// ```
