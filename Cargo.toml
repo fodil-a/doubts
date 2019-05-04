@@ -9,6 +9,7 @@ repository = "https://github.com/rustyTheClone/doubts"
 readme = "README.md"
 keywords = ["test", "macro", "unit"]
 categories=["development-tools"]
+license = "MIT"
 
 [dependencies]
 
